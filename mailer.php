@@ -7,10 +7,10 @@ $email = $_POST['email'];
 $subject = $_POST['subject']; 
 $message = $_POST['message']; 
 $myfile = fopen("contact.xls", "a+") or die("Unable to open file!");
-$name = fwrite($myfile, $name,\n);
-$email = fwrite($myfile, $email,\n);
-$subject = fwrite($myfile, $subject,\n);
-$message = fwrite($myfile, $message,\n);
+$name = fwrite($myfile, $name,\t);
+$email = fwrite($myfile, $email,\t);
+$subject = fwrite($myfile, $subject,\t);
+$message = fwrite($myfile, $message,\t);
 fclose($myfile);
 }
 ?> 
